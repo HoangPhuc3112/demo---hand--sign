@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    #handsfree-video-1 {
+        width: 438;
+        height: 328;
+        /* transform: rotateY(180deg); */
+    }
+
+    #video {
+        width: 438px;
+        height: 328px;
+        transform: rotateY(180deg);
+    }
+
+    #canvas {
+        width: 438px;
+        height: 328px;
+        /* transform: rotateY(180deg); */
+    }
+
+    #canvasimg {
+        width: 438px;
+        height: 328px;
+        transform: rotateY(180deg);
+
+    }
+</style>
+
+<body>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=PbTcYW7p"></script>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@0.1.5/dist/handtrack.min.js"> </script>
+    <script src="https://unpkg.com/handsfree@8.5.1/build/lib/handsfree.js"></script>
+    <script type="module" src="Test1.js"></script>
+    <script type="module" src="linePose.js"></script>
+
+    <video id="video" style="width: 438px; height: 328px;"></video>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvasimg"></canvas>
+    <div>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="clearConsole">Clear Console</button>
+    </div>
+    <div>
+        <p>Model: <a id="class"></a></p>
+        <p>Accuracy: <a id="accuracy"></a></p>
+    </div>
+</body>
+
+</html>
